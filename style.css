@@ -87,7 +87,7 @@ div.container-password span.title {
   color: #fff;
 }
 
-div.container-password span.password {
+.password {
   height: 60px;
 
   background-color: rgba(0, 0, 0, 0.4);
@@ -139,5 +139,5 @@ div.container-password span.tooltip i.bx-copy {
 }
 
 div.hide {
-  display: none; 
+  display: none;
 }

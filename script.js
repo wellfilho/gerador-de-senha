@@ -23,10 +23,14 @@ function generatePassword() {
   }
 
   containerPassword.classList.remove("hide");
+  password.style.border = "";
   password.innerHTML = pass;
   novaSenha = pass;
 }
 
 function copyPassword() {
   navigator.clipboard.writeText(novaSenha);
+
+  password.style.border = "1px solid green";
+  password.style.transition = "all 0.2s ease-in-out";
 }
