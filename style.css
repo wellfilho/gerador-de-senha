@@ -1,0 +1,143 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  background-color: #18181b;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+img.logo {
+  max-width: 600px;
+
+  margin-bottom: 24px;
+}
+
+main.container-input {
+  max-width: 480px;
+
+  margin: 14px 0;
+}
+
+main.container-input span {
+  color: #fff;
+  font-size: 22px;
+}
+
+main.container-input input.slider {
+  width: 100%;
+  height: 18px;
+
+  margin-top: 8px;
+
+  outline: none;
+
+  background: #dfdfdf;
+  border-radius: 5px;
+
+  -webkit-appearance: none;
+}
+
+main.container-input button.button-cta {
+  height: 40px;
+
+  margin-top: 40px;
+
+  color: #fff;
+  background-color: #3eb72b;
+  border: none;
+  border-radius: 4px;
+
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+div.container-password {
+  max-width: 480px;
+  margin-top: 14px 0;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  cursor: pointer;
+}
+
+div.container-password span.title {
+  margin-top: 24px;
+  margin-bottom: 8px;
+
+  text-align: center;
+  font-size: 28px;
+
+  color: #fff;
+}
+
+div.container-password span.password {
+  height: 60px;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #313131;
+
+  transition: transform 0.2s;
+}
+
+div.container-password span.password:hover {
+  transform: scale(1.01);
+}
+
+div.container-password span.tooltip {
+  position: relative;
+  top: 20px;
+  padding: 6px 8px;
+
+  background-color: rgb(15, 15, 15);
+  color: #fff;
+
+  text-align: center;
+  font-size: 16px;
+
+  border-radius: 6px;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all 0.2s ease-in-out;
+}
+
+div.container-password:hover span.tooltip {
+  bottom: 50px;
+
+  visibility: visible;
+  opacity: 1;
+}
+
+div.container-password span.tooltip i.bx-copy {
+  width: 1%;
+}
+
+div.hide {
+  display: none; 
+}
